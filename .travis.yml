@@ -1,0 +1,15 @@
+go_import_path: github.com/aryahadii/ngram
+
+language: go
+go:
+  - 1.8
+
+os:
+  - linux
+  - osx
+
+script:
+  - go install ./...
+  - go test -v ./...
+
+sudo: false
